@@ -5,6 +5,10 @@
     font-size: 16px;
 }
 
+root {
+    --cor001: var(rgb(58, 0, 112));
+}
+
 body {
     background-color: rgb(204, 157, 248);
 }
@@ -15,4 +19,39 @@ main {
     margin: auto;
     padding: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--cor001);
+}
+
+img.lado {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor001);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(26, 26, 255);
+}
+
+div.video {
+    margin: 0px -20px;
+    padding: 90px;
+    padding-bottom: 40%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 95%;
 }
